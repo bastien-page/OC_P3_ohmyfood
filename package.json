@@ -1,0 +1,19 @@
+{
+  "name": "bastienguillaumont_3_06062021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bab2a2s/BastienGuillaumont_3_06062021.git"
+  },
+  "author": "Bastien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bab2a2s/BastienGuillaumont_3_06062021/issues"
+  },
+  "homepage": "https://github.com/Bab2a2s/BastienGuillaumont_3_06062021#readme"
+}
