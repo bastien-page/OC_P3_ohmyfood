@@ -1,0 +1,24 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    color: $colorpolicesecondary;
+    background-color: $colorbgtertiary;
+    padding-left : 1.5rem;
+    h4 {
+        font-family: "Shrikhand";
+        font-weight: 300;
+        margin: 1rem 0;
+    }
+    i {
+        width: 15px;
+        height: 15px;
+        margin-right: 1rem;
+    }
+    ul {
+        padding-bottom: 1.5rem;
+    }
+    li {
+        margin: 0.5rem 0;
+    }  
+}

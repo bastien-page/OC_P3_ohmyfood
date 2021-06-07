@@ -1,0 +1,27 @@
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60px;
+        img{
+            width: 170px;
+            grid-column-start: 2;
+            align-self: center;
+            justify-self: center;
+        }
+    &__restaurant{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 60px;
+        a {
+            justify-self: center;
+            align-self: center;
+            font-size: 1.2rem;
+        }
+        img {
+            justify-self: center;
+            width: 170px;
+            padding-top: 1rem;
+        }
+    }
+}

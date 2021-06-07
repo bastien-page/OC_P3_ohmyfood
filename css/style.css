@@ -35,4 +35,60 @@ p {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 60px;
+}
+.header img {
+  width: 170px;
+  grid-column-start: 2;
+  align-self: center;
+  justify-self: center;
+}
+.header__restaurant {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 60px;
+}
+.header__restaurant a {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2rem;
+}
+.header__restaurant img {
+  justify-self: center;
+  width: 170px;
+  padding-top: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #2e2e2e;
+  padding-left: 1.5rem;
+}
+footer h4 {
+  font-family: "Shrikhand";
+  font-weight: 300;
+  margin: 1rem 0;
+}
+footer i {
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
+}
+footer ul {
+  padding-bottom: 1.5rem;
+}
+footer li {
+  margin: 0.5rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */
