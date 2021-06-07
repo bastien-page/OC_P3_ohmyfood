@@ -54,3 +54,19 @@
     }
     
 }
+
+// SECTION RESTAURANT 
+
+.restaurant {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px repeat(4, 1fr) 60px;
+    row-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    width: 100%; 
+    background-color: $colorbgprimary;
+    h2{
+        width: 335px;
+    }
+}
