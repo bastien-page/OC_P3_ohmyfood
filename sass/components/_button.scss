@@ -1,0 +1,13 @@
+
+.btn {
+    border-radius: 25px;
+    background: $colorprimary;
+    background: linear-gradient(173deg, $colorsecondary 0%, $colorprimary 94%);
+    color: $colorpolicesecondary;
+    padding: 1rem;
+    cursor: pointer;
+    @include cardshadow ($colorbgsecondary);
+    &:hover {
+        opacity: 0.7;
+    }
+}

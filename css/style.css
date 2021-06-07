@@ -40,6 +40,19 @@ a {
   color: inherit;
 }
 
+.btn {
+  border-radius: 25px;
+  background: #9356DC;
+  background: linear-gradient(173deg, #FF79DA 0%, #9356DC 94%);
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #e7e7e7;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
 .cardfunction {
   position: relative;
   width: 320px;
