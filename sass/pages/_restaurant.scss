@@ -37,9 +37,23 @@
         font-size: 1.6rem;
     }
     button {
-        width: 55%;
         align-self: center;
         margin: 2rem 0;
     }
 
+}
+
+// SECTION STARTER, DISH, DESSERT 
+
+.blocmenu{
+    margin-top: 2rem;
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 0.3rem;
+    }
+    &__tiret {
+        width: 40px;
+        border : 1.5px solid $colortertiary;
+        margin-bottom: 1rem;
+    }
 }

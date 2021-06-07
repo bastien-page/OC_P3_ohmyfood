@@ -6,6 +6,7 @@
     color: $colorpolicesecondary;
     padding: 1rem;
     cursor: pointer;
+    width: 250px;
     @include cardshadow ($colorbgsecondary);
     &:hover {
         opacity: 0.7;

@@ -1,0 +1,42 @@
+
+.cardmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    // padding: 0.8rem;
+    border-radius: 15px;
+    margin-bottom: 0.7rem;
+    background-color: white;
+    cursor: pointer;
+    @include cardshadow($colorbgprimary); //a refaire
+    &__info {
+        padding: 1rem;
+    } 
+    &__title{
+        font-weight: 500;
+    }
+    &__description {
+        font-size: 0.9rem;
+        font-weight: 300;
+        padding-top: 0.2rem;
+    }
+    &__price {
+        align-self: flex-end;
+        font-weight: 500;
+        padding: 1rem;
+    }
+    &__add {
+        display: none;
+        background-color: $colortertiary;
+        color: white;
+        text-align: center;
+        border-radius: 0 15px 15px 0;
+        line-height: 70px;
+        width: 55px;
+        height: 70px;
+        font-size: 1.2rem;
+        
+    }
+}
