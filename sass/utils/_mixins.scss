@@ -1,0 +1,6 @@
+
+// SHADOW CARD 
+
+@mixin cardshadow ($color){
+    box-shadow: 5px 5px 10px $color;
+}

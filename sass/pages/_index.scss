@@ -38,3 +38,19 @@
         margin-bottom: 2rem;
         }
 }
+
+// SECTION FUNCTION
+
+.function {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px repeat(3, 1fr) 60px;
+    row-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    h2 {
+        width: 335px;
+    }
+    
+}
