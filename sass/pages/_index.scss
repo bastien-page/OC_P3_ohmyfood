@@ -1,0 +1,40 @@
+
+// CONTAINER 
+
+.container_index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+// SECTION SEARCH
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: $colorbgsecondary;
+    &__bar {
+        display: flex;
+        width: 170px;
+        input {
+            background-color: $colorbgsecondary;
+            padding-left: 0.6rem;
+            width: 150px;
+        }
+    }
+}
+
+// SECTION PRESENTATION 
+
+.presentation {
+    background-color: $colorbgprimary;
+    text-align: center;
+    padding: 3rem;
+    p {
+        margin-top : 1rem;
+        margin-bottom: 2rem;
+        }
+}
