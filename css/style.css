@@ -1,3 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+}
 
 /*# sourceMappingURL=style.css.map */
