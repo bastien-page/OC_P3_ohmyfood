@@ -262,4 +262,31 @@ footer li {
   object-fit: cover;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 45px 45px 0 0;
+  padding: 2rem 1rem;
+  margin-top: -3rem;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__title {
+  font-family: "Shrikhand";
+  font-weight: 300;
+}
+.menu__icon {
+  padding-right: 1.6rem;
+  align-self: center;
+  font-size: 1.6rem;
+}
+.menu button {
+  width: 55%;
+  align-self: center;
+  margin: 2rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */

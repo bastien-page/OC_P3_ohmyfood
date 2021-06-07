@@ -13,3 +13,33 @@
     height: 200px;
     object-fit: cover;
 }
+
+// SECTION MENU 
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorbgprimary;
+    border-radius: 45px 45px 0 0 ;
+    padding: 2rem 1rem;
+    margin-top: -3rem;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-family: "Shrikhand";
+        font-weight: 300;
+    }
+    &__icon {
+        padding-right: 1.6rem;
+        align-self: center;
+        font-size: 1.6rem;
+    }
+    button {
+        width: 55%;
+        align-self: center;
+        margin: 2rem 0;
+    }
+
+}
