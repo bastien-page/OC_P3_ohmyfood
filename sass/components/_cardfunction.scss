@@ -29,4 +29,12 @@
         left: 5rem;
          font-weight: 500;
     }
- }
+}
+
+// MEDIA QUERIES 
+
+@media screen and (min-width : 1000px) {
+    .cardfunction {
+        width: 300px;
+    }
+}

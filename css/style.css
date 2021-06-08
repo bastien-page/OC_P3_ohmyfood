@@ -86,6 +86,11 @@ a {
   font-weight: 500;
 }
 
+@media screen and (min-width: 1000px) {
+  .cardfunction {
+    width: 300px;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -333,6 +338,17 @@ footer li {
 @media screen and (min-width: 1000px) {
   .restaurant {
     row-gap: 4rem;
+  }
+
+  .function {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90px 1fr 60px;
+    column-gap: 1rem;
+  }
+  .function h2 {
+    grid-column: 1/span 3;
+    justify-self: flex-start;
+    padding-left: 1rem;
   }
 }
 .container_restaurant {
