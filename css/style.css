@@ -198,7 +198,7 @@ a {
 @media screen and (min-width: 1000px) {
   .cardmenu {
     align-items: flex-start;
-    width: 300px;
+    width: 95%;
     height: 100px;
   }
 }

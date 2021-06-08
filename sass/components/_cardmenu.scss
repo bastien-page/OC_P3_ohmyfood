@@ -6,7 +6,6 @@
     width: 100%;
     max-width: 500px;
     height: 70px;
-    // padding: 0.8rem;
     border-radius: 15px;
     margin-bottom: 0.7rem;
     background-color: white;
@@ -47,7 +46,7 @@
 @media screen and (min-width : $breakpointdesk){
     .cardmenu{
         align-items: flex-start;
-        width: 300px;
+        width: 95%;
         height: 100px;
 }
 }
