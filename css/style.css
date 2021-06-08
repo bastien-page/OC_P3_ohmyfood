@@ -185,6 +185,10 @@ a {
   font-weight: 300;
   padding-top: 0.2rem;
 }
+.cardmenu__right {
+  display: flex;
+  height: 100%;
+}
 .cardmenu__price {
   align-self: flex-end;
   font-weight: 500;
@@ -197,10 +201,10 @@ a {
   background-color: #99E2D0;
   color: white;
   border-radius: 0 15px 15px 0;
-  width: 15%;
-  min-width: 55px;
+  width: 65px;
   height: 100%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -274,8 +278,8 @@ footer li {
 .container_index {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
+  width: 100%;
   max-width: 1500px;
   margin: 0 auto;
 }

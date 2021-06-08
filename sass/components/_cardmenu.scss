@@ -22,6 +22,10 @@
         font-weight: 300;
         padding-top: 0.2rem;
     }
+    &__right {
+        display: flex;
+        height: 100%;
+    }
     &__price {
         align-self: flex-end;
         font-weight: 500;
@@ -34,12 +38,10 @@
         background-color: $colortertiary;
         color: white;
         border-radius: 0 15px 15px 0;
-        width: 15%;
-        min-width: 55px;
+        width: 65px;
         height: 100%;
-        font-size: 1.2rem;
-        // display: none;
- 
+        font-size: 1.4rem;
+        display: none;
     }
 }
 
