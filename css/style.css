@@ -336,7 +336,7 @@ footer li {
   }
   .restaurant h2 {
     grid-column: 1/span 2;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
   }
 
@@ -356,7 +356,7 @@ footer li {
   }
   .function h2 {
     grid-column: 1/span 3;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -373,7 +373,7 @@ footer li {
     border-radius: 25px 25px 0 0;
   }
   .restaurant h2 {
-    justify-self: center;
+    justify-content: center;
     text-align: center;
   }
 }

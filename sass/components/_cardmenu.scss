@@ -44,7 +44,7 @@
 
 // MEDIA QUERIES 
 
-@media screen and (min-width : 1000px){
+@media screen and (min-width : $breakpointdesk){
     .cardmenu{
         align-items: flex-start;
         width: 300px;

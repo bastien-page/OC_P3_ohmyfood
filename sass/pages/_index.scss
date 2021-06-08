@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    max-width: 1500px;
+    max-width: $breakpointmax;
     margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@
 
 // MEDIA QUERIES 
 
-@media screen and (min-width : 750px) {
+@media screen and (min-width : $breakpointpad) {
     .restaurant {
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
@@ -84,8 +84,7 @@
         row-gap: 2rem;
         h2 {
             grid-column: 1 / span 2;
-            justify-self: center;
-            text-align: center;
+            @include center
         }
     }
     .function{
@@ -95,7 +94,7 @@
     }
 }
 
-@media screen and (min-width : 1000px) {
+@media screen and (min-width : $breakpointdesk) {
     .restaurant {
         row-gap: 4rem;
     }
@@ -105,13 +104,12 @@
         column-gap: 1rem;
         h2 {
             grid-column: 1 / span 3;
-            justify-self: center;
-            text-align: center;
+            @include center
         }
     }
 }
 
-@media screen and (min-width : 1500px) {
+@media screen and (min-width : $breakpointmax) {
     .search {
         border-radius: 25px 25px 0 0 ;
     }
@@ -121,8 +119,7 @@
     .restaurant {
         border-radius: 25px 25px 0 0 ;
         h2 {
-            justify-self: center;
-            text-align: center;
+            @include center
     }
 }
 }

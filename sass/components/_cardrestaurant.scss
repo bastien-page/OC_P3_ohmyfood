@@ -56,7 +56,7 @@
 
 // MEDIA QUERIES 
 
-@media screen and (min-width : 1000px) {
+@media screen and (min-width : $breakpointdesk) {
     .card {
     width: 450px;
     height: 250px; 
