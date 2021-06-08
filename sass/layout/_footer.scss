@@ -22,3 +22,16 @@ footer {
         margin: 0.5rem 0;
     }  
 }
+
+// MEDIA QUERIES 
+
+@media screen and (min-width : 800px) {
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    a:hover {
+            text-decoration: underline;
+        }
+
+    }
