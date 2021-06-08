@@ -53,6 +53,9 @@ a {
 .btn:hover {
   opacity: 0.7;
 }
+.btn > a:hover {
+  text-decoration: none;
+}
 
 .cardfunction {
   position: relative;
@@ -265,6 +268,8 @@ footer li {
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .search {
@@ -331,8 +336,12 @@ footer li {
   }
   .restaurant h2 {
     grid-column: 1/span 2;
-    justify-self: flex-start;
-    padding-left: 1rem;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .function h2 {
+    text-align: center;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -347,8 +356,25 @@ footer li {
   }
   .function h2 {
     grid-column: 1/span 3;
-    justify-self: flex-start;
-    padding-left: 1rem;
+    justify-self: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .search {
+    border-radius: 25px 25px 0 0;
+  }
+
+  .presentation {
+    border-radius: 0 0 25px 25px;
+  }
+
+  .restaurant {
+    border-radius: 25px 25px 0 0;
+  }
+  .restaurant h2 {
+    justify-self: center;
+    text-align: center;
   }
 }
 .container_restaurant {
