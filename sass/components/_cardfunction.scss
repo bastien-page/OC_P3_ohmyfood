@@ -5,6 +5,7 @@
     height: 60px;
     line-height: 60px;
     border-radius: 15px;
+    cursor: pointer;
     background-color: $colorbgprimary;
     @include cardshadow ($colorbgsecondary);
     &__number{
@@ -29,6 +30,13 @@
         left: 5rem;
          font-weight: 500;
     }
+    &:hover {
+        background-color: lighten($color: $colorprimary, $amount: 35);
+        i{
+            color: $colorprimary;
+        } 
+    }
+
 }
 
 // MEDIA QUERIES 
