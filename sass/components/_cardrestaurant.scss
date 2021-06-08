@@ -51,7 +51,14 @@
     }
     &:hover{
         box-shadow: 0 0 10px 0 $colorprimary;
+    } 
+}
+
+// MEDIA QUERIES 
+
+@media screen and (min-width : 1000px) {
+    .card {
+    width: 450px;
+    height: 250px; 
     }
-    
-    
 }
