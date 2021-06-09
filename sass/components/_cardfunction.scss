@@ -8,7 +8,7 @@
     cursor: pointer;
     background-color: $colorbgprimary;
     @include shadow ($colorbgsecondary);
-    transition: 0.4s;
+    transition: 0.5s;
     &__number{
         position: absolute;
         left: -10px;

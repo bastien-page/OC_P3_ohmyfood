@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     width: 100%;
     max-width: 500px;
     height: 70px;
@@ -11,6 +12,7 @@
     background-color: white;
     cursor: pointer;
     @include shadow($colorbgsecondary); 
+    
     &__info {
         padding: 1rem;
     } 
@@ -25,6 +27,8 @@
     &__right {
         display: flex;
         height: 100%;
+        transform: translateX(55px);
+        transition: all 1s;  
     }
     &__price {
         align-self: flex-end;
@@ -38,13 +42,22 @@
         background-color: $colortertiary;
         color: white;
         border-radius: 0 15px 15px 0;
-        width: 65px;
+        width: 55px;
         height: 100%;
         font-size: 1.4rem;
-        display: none;
+        i {
+            transform: rotate(-1turn);
+            transition: all 0.5s 0.1s ease-in-out;
+        }
     }
-    &:hover &__add{
-        display: inherit;
+    &:hover {
+        .cardmenu__right{
+            transform: translateX(0);
+            .cardmenu__add>i {
+            transform: rotate(0turn);
+            }
+        }
+        
     }
 }
 
