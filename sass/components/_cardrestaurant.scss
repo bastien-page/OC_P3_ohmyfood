@@ -7,7 +7,8 @@
     background-color: white; 
     border-radius: 25px;
     cursor: pointer;
-    @include cardshadow($colorbgsecondary);
+    @include shadow($colorbgsecondary);
+    transition: 0.4s;
     &__header {
         position: relative;
     }

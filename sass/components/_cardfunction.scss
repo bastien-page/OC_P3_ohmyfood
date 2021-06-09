@@ -7,7 +7,8 @@
     border-radius: 15px;
     cursor: pointer;
     background-color: $colorbgprimary;
-    @include cardshadow ($colorbgsecondary);
+    @include shadow ($colorbgsecondary);
+    transition: 0.4s;
     &__number{
         position: absolute;
         left: -10px;

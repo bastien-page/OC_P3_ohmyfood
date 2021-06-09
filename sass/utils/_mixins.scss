@@ -1,9 +1,14 @@
 
 // SHADOW CARD 
 
-@mixin cardshadow ($color){
+@mixin shadow ($color){
     box-shadow: 5px 5px 10px $color;
 }
+
+@mixin shadowhover ($color){
+    box-shadow: 5px 5px 10px $color;
+}
+
 
 @mixin center {
     justify-content: center;
