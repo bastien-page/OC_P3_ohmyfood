@@ -169,65 +169,86 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   overflow: hidden;
   width: 100%;
   max-width: 500px;
   height: 70px;
   border-radius: 15px;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.8rem;
   background-color: white;
   cursor: pointer;
   box-shadow: 5px 5px 10px #e7e7e7;
 }
-.cardmenu__info {
-  padding: 1rem;
+.cardmenu__dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.cardmenu__title {
+.cardmenu__dish__title {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.cardmenu__description {
+.cardmenu__dish__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 0.9rem;
   font-weight: 300;
-  padding-top: 0.2rem;
 }
-.cardmenu__right {
-  display: flex;
-  height: 100%;
-  transform: translateX(55px);
-  transition: all 1s;
-}
-.cardmenu__price {
+.cardmenu__dish__price {
   align-self: flex-end;
-  font-weight: 500;
-  padding: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  padding-left: 7px;
+  transition: all 0.5s ease-in-out;
 }
-.cardmenu__add {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cardmenu__dish__validation {
+  position: absolute;
+  right: -55px;
+  width: 55px;
   background-color: #99E2D0;
   color: white;
   border-radius: 0 15px 15px 0;
-  width: 55px;
-  height: 100%;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
   font-size: 1.4rem;
+  transition: all 0.5s ease-in-out;
 }
-.cardmenu__add i {
+.cardmenu__dish__validation i {
   transform: rotate(-1turn);
   transition: all 0.5s 0.1s ease-in-out;
 }
-.cardmenu:hover .cardmenu__right {
-  transform: translateX(0);
+.cardmenu:hover .cardmenu__dish__price {
+  padding-right: 71px;
 }
-.cardmenu:hover .cardmenu__right .cardmenu__add > i {
+.cardmenu:hover .cardmenu__dish__validation {
+  transform: translateX(-55px);
+}
+.cardmenu:hover .cardmenu__dish__validation i {
   transform: rotate(0turn);
 }
 
 @media screen and (min-width: 1000px) {
   .cardmenu {
-    align-items: flex-start;
     width: 95%;
     height: 100px;
+  }
+  .cardmenu__dish {
+    white-space: pre-wrap;
+  }
+  .cardmenu__dish__title {
+    margin-bottom: 1rem;
+  }
+  .cardmenu__dish__validation {
+    height: 100px;
+    line-height: 100px;
   }
 }
 .header {
