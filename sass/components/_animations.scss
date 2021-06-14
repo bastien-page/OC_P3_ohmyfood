@@ -1,0 +1,45 @@
+
+.appear {
+    opacity: 1;
+    animation: opacity 1.5s ease-in-out both;
+}
+
+// KEYFRAME 
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.title1 {
+    animation-delay: 50ms;
+}
+.title2 {
+    animation-delay: 350ms;
+}
+.title3{
+    animation-delay: 650ms;
+}
+.title2-2 {
+    animation-delay: 450ms;
+}
+.title3-2 {
+    animation-delay: 750ms;
+}
+
+// BOUCLE POUR DECALAGE DELAI
+
+
+
+@for $i from 1 through 10 {
+    #card#{$i}{
+        animation-delay: $i * 100ms; 
+    }
+}
+
