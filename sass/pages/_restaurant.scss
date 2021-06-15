@@ -37,16 +37,41 @@
         font-family: "Shrikhand";
         font-weight: 300;
     }
-    &__icon {
-        padding-right: 1.6rem;
-        align-self: center;
-        font-size: 1.6rem;
-    }
     &__btn{
          align-self: center;
          margin: 2rem 0;
-    }
+    } 
+    &__icon {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &:hover {
+            .menu__icon__plein{
+                transform: scale(1);
+            }
+            .menu__icon__vide{
+                color: transparent;
+            }
+        }
+        &__vide {
+            position: absolute;
+            font-size: 1.5rem;
+            
+        }
+        &__plein{
+            position: absolute;
+            font-size: 1.5rem;
+            background: linear-gradient(173deg, $colorsecondary 0%, $colorprimary 94%);
+            color: transparent;
+            background-clip: text;
+            transform: scale(0);
+            transition: all 0.8s ease-in-out;
+        }
+    } 
 }
+
+
 
 
 // SECTION STARTER, DISH, DESSERT 
