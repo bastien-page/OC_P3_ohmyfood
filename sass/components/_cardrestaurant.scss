@@ -45,9 +45,36 @@
             font-size: 1.1rem;
         }
     }
-    &__icons {
-        font-size: 1.5rem;
-        font-weight: 100;
+    &__icon {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &__vide {
+            position: absolute;
+            font-size: 1.5rem;
+            top: 5px;
+            right: 5px;
+        }
+        &__plein {
+            position: absolute;
+            background: linear-gradient(173deg, $colorsecondary 0%, $colorprimary 94%);
+            color: transparent;
+            background-clip: text;
+            font-size: 1.5rem;
+            top: 5px;
+            right: 5px;
+            transform: scale(0);
+            transition: all 0.8s ease-in-out;
+        }
+        &:hover {
+            .card__icon__plein{
+                transform: scale(1);
+            }
+            .card__icon__vide{
+                color: transparent;
+            }
+        }
         
     }
     &:hover{
