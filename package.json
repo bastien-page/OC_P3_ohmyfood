@@ -1,11 +1,10 @@
 {
   "name": "bastienguillaumont_3_06062021",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "prefix" : "postcss ./css/style.css --use autoprefixer -d ./css/"
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Bab2a2s/BastienGuillaumont_3_06062021/issues"
   },
-  "homepage": "https://github.com/Bab2a2s/BastienGuillaumont_3_06062021#readme"
+  "homepage": "https://github.com/Bab2a2s/BastienGuillaumont_3_06062021#readme",
+  "description": ""
 }
