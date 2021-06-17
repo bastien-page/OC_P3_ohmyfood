@@ -2,8 +2,8 @@
 // CONTAINER 
 
 .container_restaurant {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, normal, normal);
+
 }
 
 // SECTION BANNER 
@@ -17,21 +17,18 @@
 // SECTION MENU 
 
 .blocs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column, center, normal);
+
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, normal, normal);
     background-color: $colorbgprimary;
     border-radius: 45px 45px 0 0 ;
     padding: 2rem 1rem;
     margin-top: -3rem;
     &__header {
-        display: flex;
-        justify-content: space-between;
+        @include flex (row, space-between, normal);
     }
     &__title{
         font-family: "Shrikhand";
@@ -62,7 +59,7 @@
         &__plein{
             position: absolute;
             font-size: 1.5rem;
-            background: linear-gradient(173deg, $colorsecondary 0%, $colorprimary 94%);
+            background: $colorbggradient;
             color: transparent;
             background-clip: text;
             transform: scale(0);
@@ -99,14 +96,10 @@
         height: 350px;
     }
     .blocs {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
+        @include flex (row, space-around, flex-start);
     }
     .blocmenu {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+        @include flex (column, normal, center);
        width: 30%;
        &__tiret {
         width: 100px;

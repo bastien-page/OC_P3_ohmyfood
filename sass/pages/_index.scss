@@ -2,9 +2,7 @@
 // CONTAINER 
 
 .container_index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (column, center, normal);
     width: 100%;
     max-width: $breakpointmax;
     margin: 0 auto;
@@ -13,9 +11,7 @@
 // SECTION SEARCH
 
 .search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center);
     height: 45px;
     background-color: $colorbgsecondary;
     &__bar {

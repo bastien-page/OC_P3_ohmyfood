@@ -2,7 +2,7 @@
 .btn {
     border-radius: 25px;
     background: $colorprimary;
-    background: linear-gradient(173deg, $colorsecondary 0%, $colorprimary 94%);
+    background: $colorbggradient;
     color: $colorpolicesecondary;
     padding: 1rem;
     cursor: pointer;
