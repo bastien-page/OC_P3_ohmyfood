@@ -6,9 +6,8 @@
     position: fixed;
     margin: 0 auto;
     font-size: 3rem;
-    visibility: hidden;
     z-index: 2;
-    animation: loader 3s;
+    animation: loader 3s forwards;
     background-color: white;
     
 }
@@ -42,7 +41,7 @@
             border-radius: 50px;
             border: 7px solid transparent;
             border-top: 7px solid $colorsecondary;
-            animation: spin 2s linear 4;
+            animation: spin 2s linear 2;
         }
         &::before{
             content: "";
@@ -54,7 +53,7 @@
             border-radius: 50px;
             border: 5px solid transparent;
             border-top: 5px solid $colortertiary;
-            animation: spin 3s linear 4;
+            animation: spin 3s linear 1;
 
         }
     }
