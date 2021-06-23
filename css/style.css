@@ -107,6 +107,8 @@ a {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
   width: 335px;
   height: 250px;
   background-color: white;
@@ -137,6 +139,7 @@ a {
 }
 .card__info {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0rem 1rem 0rem 1rem;
@@ -144,6 +147,8 @@ a {
 .card__text {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
 }
 .card__text h3 {
   padding: 0.5rem 0;
@@ -267,6 +272,7 @@ a {
 
 .cardmenu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -284,6 +290,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: normal;
   width: 100%;
   padding-left: 0.8rem;
   white-space: nowrap;
@@ -381,6 +388,8 @@ a {
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
   color: #fff;
   background-color: #2e2e2e;
   padding-left: 1.5rem;
@@ -406,7 +415,9 @@ footer li {
 @media screen and (min-width: 750px) {
   ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: normal;
   }
 
   li > a:hover {

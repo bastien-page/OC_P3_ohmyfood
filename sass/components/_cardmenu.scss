@@ -1,8 +1,6 @@
 
 .cardmenu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (row, space-between, center);
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -14,9 +12,7 @@
     cursor: pointer;
     @include shadow($colorbgsecondary); 
     &__dish{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex (column, space-between, normal);
         width: 100%;
         padding-left: 0.8rem;
         white-space: nowrap;

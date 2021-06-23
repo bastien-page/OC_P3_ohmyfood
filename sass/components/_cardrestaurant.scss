@@ -1,7 +1,6 @@
 
 .card {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, normal, normal);
     width: 335px;
     height: 250px; 
     background-color: white; 
@@ -30,14 +29,11 @@
         object-fit: cover;
     }
     &__info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (row, space-between, center);
         padding: 0rem 1rem 0rem 1rem;
     }
     &__text {
-        display: flex;
-        flex-direction: column;
+        @include flex (column, normal, normal);
         h3 {
             padding: 0.5rem 0;
         }
