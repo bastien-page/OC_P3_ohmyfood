@@ -17,7 +17,7 @@
 // SECTION MENU 
 
 .blocs {
-    @include flex (column, center, normal);
+    @include flex (column, center, center);
 
 }
 

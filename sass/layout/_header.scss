@@ -10,9 +10,9 @@
             justify-self: center;
         }
     &__restaurant{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        height: 60px;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         height: 60px;
         a {
             justify-self: center;
             align-self: center;
