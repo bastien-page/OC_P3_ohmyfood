@@ -1,49 +1,47 @@
-
 .cardfunction {
-    position: relative;
-    width: 320px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: $colorbgprimary;
-    @include shadow ($colorbgsecondary);
-    transition: 0.5s;
-    &__number{
-        position: absolute;
-        left: -10px;
-        top : 20px;
-        width: 20px;
-        height: 20px;
-        background-color: $colorprimary;
-        font-size: 0.8rem;
-        line-height: 20px;
-        text-align: center;
-        color: white;
-        border-radius: 50%;
+  position: relative;
+  width: 320px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: $colorbgprimary;
+  @include shadow($colorbgsecondary);
+  transition: 0.5s;
+  &__number {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: $colorprimary;
+    font-size: 0.8rem;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+  }
+  &__icon {
+    position: absolute;
+    left: 2.5rem;
+  }
+  &__text {
+    position: absolute;
+    left: 5rem;
+    font-weight: 500;
+  }
+  &:hover {
+    background-color: lighten($color: $colorprimary, $amount: 35);
+    i {
+      color: $colorprimary;
     }
-    &__icon {
-        position: absolute;
-        left: 2.5rem;
-    }
-    &__text {
-        position: absolute;
-        left: 5rem;
-         font-weight: 500;
-    }
-    &:hover {
-        background-color: lighten($color: $colorprimary, $amount: 35);
-        i{
-            color: $colorprimary;
-        } 
-    }
-
+  }
 }
 
-// MEDIA QUERIES 
+// MEDIA QUERIES
 
-@media screen and (min-width : $breakpointdesk) {
-    .cardfunction {
-        width: 300px;
-    }
+@media screen and (min-width: $breakpointdesk) {
+  .cardfunction {
+    width: 300px;
+  }
 }

@@ -1,14 +1,14 @@
-// Import Utils 
+// Import Utils
 
 @import "../sass/utils/variables";
 @import "../sass/utils/mixins";
 
-// Import Base 
+// Import Base
 
 @import "../sass/base/base";
 @import "../sass/base/typography";
 
-// Import Components 
+// Import Components
 
 @import "../sass/components/button";
 @import "../sass/components/cardfunction";
@@ -16,17 +16,13 @@
 @import "../sass/components/animations";
 @import "../sass/components/cardmenu";
 
-
-//  Import Layout 
+//  Import Layout
 
 @import "../sass/layout/header";
 @import "../sass/layout/footer";
 @import "../sass/layout/loader";
 
-// Import Pages 
+// Import Pages
 
 @import "../sass/pages/index";
 @import "../sass/pages/restaurant";
-
-
-

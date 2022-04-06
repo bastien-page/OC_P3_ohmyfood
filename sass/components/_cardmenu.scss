@@ -1,89 +1,86 @@
-
 .cardmenu {
-    @include flex (row, space-between, center);
-    position: relative;
-    overflow: hidden;
+  @include flex(row, space-between, center);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  height: 70px;
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+  background-color: white;
+  cursor: pointer;
+  @include shadow($colorbgsecondary);
+  &__dish {
+    @include flex(column, space-between, normal);
     width: 100%;
-    max-width: 500px;
-    height: 70px;
-    border-radius: 15px;
-    margin-bottom: 0.8rem;
-    background-color: white;
-    cursor: pointer;
-    @include shadow($colorbgsecondary); 
-    &__dish{
-        @include flex (column, space-between, normal);
-        width: 100%;
-        padding-left: 0.8rem;
-        white-space: nowrap;
-        overflow: hidden;
-        &__title {
-            font-weight: 500;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        &__description {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-size: 0.9rem;
-            font-weight: 300;
-        }
-        &__price {
-            align-self: flex-end;
-            padding-right: 1rem;
-            padding-bottom: 1rem;
-            font-weight: bold;
-            padding-left: 7px;
-            transition: all 0.5s ease-in-out;
-        }
-        &__validation {
-            position: absolute;
-            right: -55px;
-            width: 55px;
-            background-color: $colortertiary;
-            color: white;
-            border-radius: 0 15px 15px 0;
-            text-align: center;
-            height: 70px;
-            line-height: 70px;
-            font-size: 1.4rem;
-            transition: all 0.5s ease-in-out;
-            i {
-                transform: rotate(-1turn);
-                transition: all 0.5s 0.1s ease-in-out;
-            } 
-        }
+    padding-left: 0.8rem;
+    //white-space: nowrap;
+    //overflow: hidden;
+    &__title {
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    &:hover {
-        .cardmenu__dish__price {
-            padding-right: 71px;
-        }
-        .cardmenu__dish__validation{
-            transform: translateX(-55px);
-            i {
-                transform: rotate(0turn); 
-            }
-        }
+    &__description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 0.9rem;
+      font-weight: 300;
     }
+    &__price {
+      align-self: flex-end;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      font-weight: bold;
+      padding-left: 7px;
+      transition: all 0.5s ease-in-out;
+    }
+    &__validation {
+      position: absolute;
+      right: -55px;
+      width: 55px;
+      background-color: $colortertiary;
+      color: white;
+      border-radius: 0 15px 15px 0;
+      text-align: center;
+      height: 70px;
+      line-height: 70px;
+      font-size: 1.4rem;
+      transition: all 0.5s ease-in-out;
+      i {
+        transform: rotate(-1turn);
+        transition: all 0.5s 0.1s ease-in-out;
+      }
+    }
+  }
+  &:hover {
+    .cardmenu__dish__price {
+      padding-right: 71px;
+    }
+    .cardmenu__dish__validation {
+      transform: translateX(-55px);
+      i {
+        transform: rotate(0turn);
+      }
+    }
+  }
 }
 
+// MEDIA QUERIES
 
-
-// MEDIA QUERIES 
-
-@media screen and (min-width : $breakpointdesk){
-    .cardmenu{
-        width: 95%;
+@media screen and (min-width: $breakpointdesk) {
+  .cardmenu {
+    width: 95%;
+    height: 100px;
+    &__dish {
+      white-space: pre-wrap;
+      &__title {
+        margin-bottom: 1rem;
+      }
+      &__validation {
         height: 100px;
-        &__dish{
-            white-space: pre-wrap;
-            &__title {
-                margin-bottom: 1rem;
-            }
-            &__validation{
-                height: 100px;
-                line-height: 100px;
-            }
-        }
+        line-height: 100px;
+      }
     }
+  }
 }

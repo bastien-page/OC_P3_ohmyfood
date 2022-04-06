@@ -1,38 +1,34 @@
-
 footer {
-    @include flex (column, normal, normal);
-    color: $colorpolicesecondary;
-    background-color: $colorbgtertiary;
-    padding-left : 1.5rem;
-    transition: 0.5s;
-    h4 {
-        font-family: "Shrikhand";
-        font-weight: 300;
-        margin: 1rem 0;
-    }
-    i {
-        width: 15px;
-        height: 15px;
-        margin-right: 1rem;
-    }
-    ul {
-        padding-bottom: 1.5rem;
-    }
-    li {
-        margin: 0.5rem 0;
-    }  
+  @include flex(column, normal, normal);
+  color: $colorpolicesecondary;
+  background-color: $colorbgtertiary;
+  padding-left: 1.5rem;
+  transition: 0.5s;
+  h4 {
+    font-family: "Shrikhand";
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+  i {
+    width: 15px;
+    height: 15px;
+    margin-right: 1rem;
+  }
+  ul {
+    padding-bottom: 1.5rem;
+  }
+  li {
+    margin: 0.5rem 0;
+  }
 }
 
-// MEDIA QUERIES 
+// MEDIA QUERIES
 
-@media screen and (min-width : $breakpointpad) {
-    ul{
-        @include flex (row, space-around, normal);
-        
-    }
-    li>a:hover {
-            text-decoration: underline;
-        }
-
-    }
-
+@media screen and (min-width: $breakpointpad) {
+  ul {
+    @include flex(row, space-around, normal);
+  }
+  li > a:hover {
+    text-decoration: underline;
+  }
+}
